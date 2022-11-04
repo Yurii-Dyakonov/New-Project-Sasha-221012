@@ -1,0 +1,151 @@
+/* Common styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.nav-menu-main {
+  display: flex;
+  width: 95%;
+  margin-right: 150px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.search-wrapper {
+  width: auto;
+  float: right;
+  margin-top: 10px;
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 3px 4px;
+}
+
+button {
+  padding: 0;
+  max-width: 8%;
+  cursor: pointer;
+  border: none;
+}
+
+.pagination {
+  padding: 5px;
+  max-width: 58%;
+  background-color: bisque;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.pag {
+  display: inline;
+  float: right;
+  margin: 3px 16px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+form {
+  flex-grow: 1;
+}
+
+.search-input {
+  border: none;
+  margin-right: 5px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h2.title {
+  transition: all 300ms ease-in-out;
+  transform-origin: left;
+}
+
+h2.title:hover {
+  transform: scale(1.07);
+}
+
+section {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.dynamic_section > li {
+  margin-bottom: 40px;
+}
+
+.properties {
+  font-weight: bold;
+  transition: all 300ms ease-in-out;
+}
+
+.properties:hover {
+  background-color: aquamarine;
+  font-size: 1.15em;
+}
+
+.signing {
+  display: inline-block;
+  font-size: 1.05em;
+  font-style: italic;
+  color: gray;
+}
+.paragraph {
+  margin-top: 1px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+  padding: o;
+}
+
+a {
+  text-decoration: none;
+
+  margin-right: 5px;
+  color: rgba(0, 0, 0, 0.763);
+  text-transform: uppercase;
+}
+
+/**.btn {
+  width: 35px;
+  height: 35px;
+  margin: 1px;
+  background-color: gray;
+}
+
+.btns {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  background-color: bisque;
+}
+
+.active {
+  background-color: green;
+}
+
+.btn:hover {
+  background-color: azure;
+  color: red;
+} */

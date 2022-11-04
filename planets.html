@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planets</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/39597cb658.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/burger.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-menu-main">
+        <a href="/" class="nav-menu-logo">
+          <img
+            class="logo"
+            src="https://stellazhi.com.ua/image-cache/?w=140&h=140&a=3&f=static-files%2Fimg%2Ffirm%2Fchp-yuris-proizvoditel-polochnyh-metallicheskih-stellazheyf1c1ba597cf0682400x120-275173.png"
+            alt="Logo"
+          />
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="./index.html">Films</a>
+          </li>
+          <li class="nav-item">
+            <a href="/people.html">People</a>
+          </li>
+          <li class="nav-item">
+            <a href="./planets.html">Planets</a>
+          </li>
+          <li class="nav-item">
+            <a href="./species.html">Species</a>
+          </li>
+          <li class="nav-item">
+            <a href="./starships.html">Starships</a>
+          </li>
+          <li class="nav-item">
+            <a href="vehicles.html">Vehicles</a>
+          </li>
+        </ul>
+        <form id="search_form">
+          <div class="search-wrapper">
+            <input
+              class="search-input"
+              id="search_inp"
+              placeholder="Search for..."
+              type="text"
+            />
+            <button type="submit">
+              <img src="./assets/icons8-search.gif" alt="" />
+            </button>
+          </div>
+        </form>
+      </nav>
+
+      <div id="search_pag" class="pag">
+        <button id="prev_page" class="pagination" type="button">
+          Previous page
+        </button>
+        <button id="next_page" class="pagination" type="button">
+          Next page
+        </button>
+      </div>
+
+      <div class="burger">
+        <span class="bar">___</span>
+        <span class="bar">___</span>
+        <span class="bar">___</span>
+      </div>
+    </header>
+    <main>
+      <section>
+        <ul class="dynamic_section" id="planets_section_ul"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="./planets.js"></script>
+    <script src="./burger.js"></script>
+  </body>
+</html>

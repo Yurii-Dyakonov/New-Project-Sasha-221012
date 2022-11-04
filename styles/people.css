@@ -1,0 +1,30 @@
+/* People styles */
+main {
+  padding-top: 10px;
+}
+
+h3 {
+  width: 35%;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.head-line {
+  width: 29%;
+  background: #f3e9d2;
+}
+.head-line h3,
+.head-line p {
+  margin: 0px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.head-line p {
+  text-align: right;
+  padding-right: 2px;
+  float: right;
+}

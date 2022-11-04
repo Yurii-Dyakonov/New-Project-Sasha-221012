@@ -1,0 +1,74 @@
+/* Common styles */
+.nav-menu-main {
+  max-width: 95%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.burger {
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  top: -10px;
+  text-align: center;
+}
+
+.bar {
+  display: block;
+  width: 45px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+@media screen and (max-width: 720px) {
+  .burger {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .search-wrapper {
+    width: auto;
+  }
+
+  .burger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .bar:nth-child(1) {
+    transform: translateX(11px) translateY(8px) rotate(45deg);
+  }
+  .burger.active .bar:nth-child(3) {
+    transform: translateX(-11px) translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: aquamarine;
+    width: 93%;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
